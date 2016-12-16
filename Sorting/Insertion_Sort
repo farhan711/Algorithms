@@ -1,0 +1,16 @@
+"""
+Using Python V : 3.4
+Author : Farhan Ansari
+Desciption : Insertion Sort (Worst case complexity O(n^2) , Best case complexity O(n^2))
+"""
+def Insertion_sort(num):
+    for i in range(1,len(num)):
+        temp = num[i]###i as index
+        k=i
+        while k > 0 and temp < num[k-1]:
+            num[k] =num[k-1]
+            k -= 1
+        num[k]=temp
+num = [25,58,99,6,64,63,22,41,74]
+Insertion_sort(num)
+print(num)
